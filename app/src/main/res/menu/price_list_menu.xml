@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_sort_az"
+        android:title="По алфавиту (А → Я)"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_sort_za"
+        android:title="По алфавиту (Я → А)"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_sort_price_asc"
+        android:title="По цене (сначала дешёвые)"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_sort_price_desc"
+        android:title="По цене (сначала дорогие)"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_filter_no_price"
+        android:title="Показать только без цены"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_filter_only_price"
+        android:title="Показать только с ценой"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_show_all"
+        android:title="Показать все"
+        app:showAsAction="never" />
+
+</menu>

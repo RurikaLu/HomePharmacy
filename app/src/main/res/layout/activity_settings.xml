@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2A2E43">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:paddingBottom="80dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="⚙ Настройки"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#9A9CD7"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Блок СОРТИРОВКА -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Сортировать:"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#9A9CD7"
+                android:layout_marginBottom="12dp" />
+
+            <RadioGroup
+                android:id="@+id/sortRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp">
+
+
+                <RadioButton
+                    android:id="@+id/radioSortDateDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="По добавлению:  новее ⬆"
+                    android:textColor="#FFFFFF"
+                    android:padding="8dp" />
+
+                <RadioButton
+                    android:id="@+id/radioSortDateAsc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="По добавлению:  новее ⬇"
+                    android:textColor="#FFFFFF"
+                    android:padding="8dp" />
+
+                <RadioButton
+                    android:id="@+id/radioSortAlphabeticalAsc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="По алфавиту:  А ➞ Я"
+                    android:textColor="#FFFFFF"
+                    android:padding="8dp" />
+
+                <RadioButton
+                    android:id="@+id/radioSortAlphabeticalDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="По алфавиту:  Я ➞ А"
+                    android:textColor="#FFFFFF"
+                    android:padding="8dp" />
+
+                <RadioButton
+                    android:id="@+id/radioSortExpiryAsc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="По сроку годности:  быстрее выйдет ⬆"
+                    android:textColor="#FFFFFF"
+                    android:padding="8dp" />
+
+                <RadioButton
+                    android:id="@+id/radioSortExpiryDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="По сроку годности:  быстрее выйдет ⬇"
+                    android:textColor="#FFFFFF"
+                    android:padding="8dp" />
+
+            </RadioGroup>
+
+            <!-- Блок ФИЛЬТР -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Показать:"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#9A9CD7"
+                android:layout_marginBottom="12dp" />
+
+            <RadioGroup
+                android:id="@+id/filterRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="32dp">
+
+                <RadioButton
+                    android:id="@+id/radioFilterAll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Все лекарства"
+                    android:textColor="#FFFFFF"
+                    android:padding="8dp" />
+
+                <RadioButton
+                    android:id="@+id/radioFilterAvailable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Только «Есть»"
+                    android:textColor="#FFFFFF"
+                    android:padding="8dp" />
+
+                <RadioButton
+                    android:id="@+id/radioFilterOutOfStock"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Только «Нужно купить»"
+                    android:textColor="#FFFFFF"
+                    android:padding="8dp" />
+
+            </RadioGroup>
+
+            <!-- Кнопка О ПРИЛОЖЕНИИ -->
+            <Button
+                android:id="@+id/btnAbout"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="О приложении"
+                android:backgroundTint="#5C5E89"
+                android:textColor="@android:color/white" />
+
+            <!-- Кнопка Удалить все лекарства -->
+            <Button
+                android:id="@+id/btnClearData"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="Удалить все лекарства"
+                android:backgroundTint="#202333"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="10dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!-- КНОПКА "НАЗАД" (слева внизу) -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:src="@android:drawable/ic_menu_revert"
+        app:backgroundTint="#33344D"
+        app:tint="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

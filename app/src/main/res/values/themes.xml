@@ -1,0 +1,26 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.HomePharmacy" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+
+        <!-- ОСНОВНЫЕ ЦВЕТА ПРИЛОЖЕНИЯ -->
+        <item name="colorPrimary">#2196F3</item>        <!-- Главный цвет (синий) -->
+        <item name="colorPrimaryVariant">#1976D2</item>  <!-- Тёмно-синий -->
+        <item name="colorOnPrimary">@color/white</item>  <!-- Цвет текста на главном фоне -->
+
+        <!-- ЦВЕТ ФОНА ПРИЛОЖЕНИЯ -->
+        <item name="android:windowBackground">#626C9E</item>
+
+        <!-- ЦВЕТ ВЕРХНЕЙ ПАНЕЛИ (ШАПКИ) -->
+        <item name="android:statusBarColor">#626C9E</item>
+
+        <!-- ЦВЕТ НИЖНЕЙ ПАНЕЛИ НАВИГАЦИИ -->
+        <item name="android:navigationBarColor">#626C9E</item>
+
+        <!-- ЦВЕТ ТЕКСТА ПО УМОЛЧАНИЮ -->
+        <item name="android:textColorPrimary">#000000</item>
+
+    </style>
+
+    <style name="Theme.HomePharmacy" parent="Base.Theme.HomePharmacy" />
+</resources>
